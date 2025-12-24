@@ -1,0 +1,126 @@
+@media only screen and (max-width:767px){
+	nav {
+	    width: 90%;
+	    margin: 18px 24px;
+	    display: flex;
+	    justify-content: flex-end;
+	}
+	.menuIcon {
+	    padding: 16px;
+	    display: block;
+	}
+	.navbar{
+		display: none;
+	}
+	.sidebar ul{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding-top: 10px;
+	}
+	.closeBtn{
+		
+display: flex;
+		
+justify-content: flex-end;
+		
+padding: 33px 21px;
+	}
+}
+@media(max-width: 600px){
+	.header {
+	    margin: 0 11px;
+	}
+	.row {
+	    display: block;
+	}
+	section {
+	    padding: 2.5em !important;
+	}
+
+	/*---------- navbar and sidebar-------*/
+	.navList{
+		display: none;
+	}
+	/*--------banner-------*/
+	.bannerSec h1 {
+	    font-size: 74px;
+	    line-height: 63px;
+	    margin-bottom: 14px;
+	}
+	.bannerSec span {
+	    font-size: 25px;
+	}
+	.bannerSec p {
+		font-size: 16px;
+		padding-top: 17px;
+	}
+	/*--------about me-------*/
+	.threeDCard {
+	    width: 100%;
+	    height: fit-content;
+	    padding: 21px 20px;
+	}
+	ul.socialmediaList {
+	    gap: 10px;
+	}
+	.mt-35 {
+	    margin-top: 20px;
+	}
+	/*--------skill-------*/
+	.skillsList ul li {
+	    padding: 20px 40px;
+	}
+	/*--------experience-------*/
+	.timeline-item:nth-child(odd) {
+	padding: 0px 0px 8px 18px;
+	}
+	.timeline-item:nth-child(even) {
+	padding: 0px 0px 8px 18px;
+	}
+	.timeline-card {
+	    padding: 20px;
+	}
+	.timeline-item::before {
+	    content: "";
+	    position: absolute;
+	    width: 2px;
+	    height: 100%;
+	    left: 0;
+	}
+	.timeline-item {
+	    display: block;
+	    position: relative;
+	}
+	.timeline-dote {
+	    height: 12px;
+	    width: 12px;
+	    left: -5px;
+	    top: 0;
+	}
+	.timeline-card h2 {
+		padding-bottom: 12px;
+	}
+	.hiremeSec img {
+		display: none;
+	}
+	footer p {
+	    margin-bottom: 10px;
+	}
+	#menuIcon {
+	    display: block;
+	}
+	nav.navBar {
+	    justify-content: space-between;
+	}
+	div#sideBar {
+	    display: block;
+	    position: absolute;
+	    width: 100%;
+	    background: yellow;
+	    top: 0;
+	    left: 0;
+	    padding: 0;
+	}
+}

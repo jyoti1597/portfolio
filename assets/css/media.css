@@ -1,0 +1,91 @@
+@media only screen and (max-width:767px){
+	nav {
+	    /* width: 90%; */
+	    /* margin: 18px 0px; */
+	    /* display: flex; */
+	    /* justify-content: flex-end; */
+	    padding: 14px 23px;
+	}
+	.menuIcon {
+	    padding: 16px;
+	    display: block;
+	}
+	.navbar{
+		display: none;
+	}
+	.sidebar ul{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding-top: 45px;
+	}
+	.closeBtn{
+		display: flex;	
+		justify-content: flex-end;
+		padding: 33px 21px;
+	}
+	section {
+		padding: 1em 2em 2.2em;
+	}
+	.row {
+		flex-direction: column;
+	    gap: 11px;
+	}
+	.mobileView{
+		display: none;
+	}
+	.experienceBox {
+	    width: 100%;
+	    padding: 43px 20px;
+	    gap: 0;
+	}
+	.experienceBox .num {
+		font-size: 275px;
+		margin-right: -70px;
+	}
+	.experienceBox .text {
+	    font-size: 30px;
+	}
+	.heading {
+	    padding-top: 50px;
+	}
+	.p-110 {
+	    padding: 36px !important;
+	}
+	section.hiremeSec {
+	    padding: 2.5em 3em;
+	}
+	nav ul li a {
+	    color: #37352e;
+	}
+	.experienceSec .heading h6::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 35px;
+    height: 2.2px;
+    background-color: #5940bc;
+    z-index: 999;
+    top: 14px;
+    left: 1em;
+}
+.heading h1 {
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+.heading h6 {
+    font: normal 24px/1.1 bold, Arial sans-sarif;
+    position: relative;
+    padding-left: 41px;
+}
+}
+@media only screen and (max-width:500px){
+	header {
+	    margin: 18px;
+	}
+	.experienceBox .num {
+		font-size: 240px;
+		margin: 0 -19px;
+	}
+}

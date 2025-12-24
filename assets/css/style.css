@@ -1,0 +1,613 @@
+/* Portfolio designed & developed by Jyoti Chilwal */
+* {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #333;
+}
+body {
+    /* padding: 10px; */
+    position: relative;
+}
+div#mobileView {
+    display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.column {
+    flex: 0 1 50%;
+    align-content: center;
+}
+
+.sectionHeading {
+    text-align: center;
+    margin: 14px 0;
+}
+section {
+    /* padding: 8em 6em; */
+    padding: 6.3em 6em 6em 6em;
+}
+.mt-35{
+    margin-top: 35px;
+}
+a.textBtn {
+    background: #a4db74;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.col-40{
+    flex: 0 0 40%;
+}
+.col-60{
+    flex: 0 0 60%;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-5 {
+    margin-top: 5em;
+}
+/*----------------header section----------------*/
+header {
+    margin: 44px 80px;
+}
+
+.logo span {
+    color: #A4DB74;
+}
+
+button.contactBtn {
+    background: #fff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 38px;
+    font: normal 16px/1.1 bold, Arial sans-sarif;
+    color: #5940BC;
+}
+button.contactBtn:hover {
+    background: #A4DB74;
+    color: #fff;
+}
+nav{
+    background: #5940BC;
+    color: #fff;
+    border-radius: 35px;
+    width: 100%;
+    height: 60px;
+    padding: 14px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+nav ul li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #A4DB74;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+/*nav ul li:first-child{
+    margin-right: auto;
+}*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    backdrop-filter: blur(10px);
+    display: none;
+    box-shadow: 20px 11px 13px -3px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+.sidebar li{
+    width: 100%;
+    height: 50px;
+}
+.sidebar li a{
+    width: 100%;
+    font-size: 24px;
+}
+.menuIcon{
+    display: none;
+}
+/*header {
+    background: #FFF58A;
+    margin: 0px 65px;
+    padding: 28px 25px;
+    border-radius: 18px;
+    border-bottom: 8px solid #000;
+    border-right: 6px solid #000;
+    position: sticky;
+    z-index: 100;
+    top: 12px;
+}
+nav.navBar {
+    display: flex;
+    justify-content: right;
+    gap: 13px;
+    background: transparent;
+}
+.navList ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: #fff58a;
+    flex-direction: row;
+    gap: 65px;
+}
+.navList ul li{
+    background: transparent;
+    flex: 1;
+    text-align: center;
+}
+nav ul li a{
+    background: #fff58a;
+    text-decoration: none;
+    font: normal 16px/1.1 bold, Arial sans-sarif;
+    text-transform: uppercase;
+    color: #E06B80;
+    padding: 8px;
+    margin: 5px 0px;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+nav ul li a:hover{
+    background: #E06B80;
+    color: #fff;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+    border-radius: 10px;
+}
+#menuIcon{
+    display: none;
+}*/
+/*----------------sidebar section----------------*/
+div#sideBar {
+    display: none;
+}
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -250px;        /* Hidden by default */
+  transition: 0.3s;
+  padding: 20px;
+}
+
+#sidebar.active {
+  left: 0;            /* Show sidebar */
+}
+
+#menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*----------------banner section----------------*/
+.bannerSec img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+.bannerSec img::after{
+    content: "© Jyoti Chilwal";
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      font-size: 12px;
+      opacity: 0.4;
+}
+.heading h1 {
+    font-size: 60px;
+    margin-bottom: 18px;
+}
+.bannerSec p {
+    font-size: 18px;
+    line-height: 22px;
+}
+/*----------------about section----------------*/
+.aboutSec img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.threeDCard {
+    width: 100%;
+    height: 320px;
+    background: #fff58a;
+    border: 6px solid #000;
+    box-shadow: 12px 12px 0 #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 42px 40px;
+    box-sizing: border-box;
+}
+.threeDCard::hover{
+   transform: translate(-5px, -5px);
+   box-shadow: 17px 17px 0 #000;
+}
+p {
+    background: transparent;
+    color: #7b7b7b;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/*----------------skill list section----------------*/
+.skillsList h1, .skillsList i {
+    color: #5940bc;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.skillsList ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 0.5fr));
+    gap: 10px;
+    padding: 28px 0px 0px;
+}
+.skillsList ul li {
+    background: #a4db74;
+    padding: 7px 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+ul.socialmediaList {list-style: none;display: flex;gap: 30px;justify-content: left;background: transparent;padding: 0;}
+
+ul.socialmediaList li a {
+    background: #a4db74;
+    padding: 10px;
+    border-radius: 42px;
+    color: #37352e;
+}
+ul.socialmediaList li a:hover{
+    background #37352E;
+    color: #ffff;
+    background: #1A3D64;
+}
+ul.socialmediaList li a i {
+    background: transparent;
+}
+
+ul.socialmediaList li {
+    background: transparent;
+}
+section.aboutSec {
+}
+
+section.bannerSec {
+    background: #fff;
+}
+.skillsList ul li span {
+    color: #e06b80;
+}
+.experienceSec .heading {/* padding: 6.3em 6em 6em 6em; *//* background: #305669; */text-align: center;margin-bottom: 50px;}
+.experienceSec .heading h6::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 35px;
+    height: 2.2px;
+    background-color: #5940bc;
+    z-index: 999;
+    top: 14px;
+    left: 19em;
+}
+section.skillSec {
+    background: #FFD3D5;
+}
+.timeline {
+   padding: 0;
+}
+.timeline-item{
+    /* max-width: 500px; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #a4db74;
+    left: 5px;
+    top: 6px;
+}
+/*.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}*/
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    /* padding-right: calc(50% + 30px); */
+    /*    text-align: right;*/
+}
+
+.timeline-item{/* padding: 0 12px; */}
+.timeline-dote{
+    height: 12px;
+    width: 12px;
+    background: #a4db74;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    top: 38px;
+}
+.timeline-card {
+    /* background: #fff; */
+    padding: 34px 22px;
+    width: 100%;
+}
+.timeline-card h2 {
+    color: #37352e;
+    font: 20.5px/1.1 bold, Arial sans-sarif;
+}
+
+.timeline-card span.year {
+    background: #fff;
+    color: #333;
+    padding: 8px 12px;
+    font: 16px/1.1 bold, Arial sans-sarif;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px #8888;
+    height: 35px;
+}
+
+section.hiremeSec {
+    background: #5940bc;
+    padding: 2.5em 14em;
+}
+
+.hiremeSec img {
+    width: 100px;
+    height: 100px;
+}
+.hireSecContact h1 {font: 38px/1.1 bold Arial,'sans-sarif';margin-bottom: 9px;color: #fff;}
+
+.hiremeSec .row {
+    align-items:center;
+}
+
+.hireSecContact p {
+    font: 15px/1.2 bold,Arial,'sans-sarif';
+    color: #fff;
+}
+footer {
+    padding: 14px 28px;
+}
+footer ul.socialmediaList{
+    gap:12px;
+}
+footer ul.socialmediaList li a i {
+    font-size: 12px;
+}
+footer ul.socialmediaList li a {
+    padding: 4px 6px;
+}
+footer p {
+    color: #37352e;
+    line-height: 2.2;
+}
+.heading h1 span {
+    color: #5940bc;
+}
+
+.sectionHeading h1, .sectionHeading i {
+    color: #5940be;
+}
+span.typingAnimantion {
+    font-size: 35px;
+}
+.heading h6 {font: normal 28px/1.1 bold, Arial sans-sarif;position: relative;padding-left: 50px;}
+.heading h6::before{
+    content:"";
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    width: 35px;
+    height: 2.2px;
+    background-color: #5940bc;
+    z-index: 999;
+    top: 14px;
+}
+.runingRibbon{
+    width: 100%;
+    overflow: hidden;
+    background: #a4db74;
+    padding: 15px 0px;
+}
+.runingRibbon ul{
+    display: flex;
+    gap: 90px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    animation: runText 15s linear infinite;
+    font: normal 600 28px/1.1 Arial, sans-serif;
+}
+.runingRibbon li{
+    display: inline-block;
+    position: relative;
+    margin-right: 35px;
+}
+.runingRibbon li::before{
+    content:  "";
+    display: inline-block;
+    background-image: url(../images/star_icon.png);
+    width: 100px;
+    height: 47px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: -112px;
+    top: -8px;
+}
+@keyframes runText{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.experienceBox{
+    width: 470px;
+    padding: 80px 20px;
+    background: #5940BE;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;     /* FIX */
+    gap: 0;
+}
+
+.experienceBox .num{
+    font-size: 394px;        /* reduce from 26rem */
+    line-height: 0.7;
+    font-weight: 700;
+    color: #fff;
+    margin-right: -70px;
+}
+
+.experienceBox .text{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;        /* add spacing */
+    color: #fff;
+}
+ul.bannerSocialList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    width: 50px;
+    position: absolute;
+    right: 9em;
+    top: 21em;
+}
+.justify-start{
+    justify-content: start !important;
+}
+.justify-center{
+    justify-content: center !important;
+}
+.whiteColor{
+    color: white !important;
+}
+.align-items-center{
+    align-items: center !important;
+}
+a.colorBtn {
+    background: #5940bc;
+    color: #fff;
+    padding: 11px 15px;
+    border-radius: 8px;
+    border: 2px solid #5940bc;
+}
+
+a.colorBtn:hover {
+    background: transparent;
+    border: 2px solid #5940bc;
+    color: #5940bc;
+}
+
+a.borderBtn{
+    background: transparent;
+    border: 2px solid #5940bc;
+    color: #5940bc;
+    padding: 11px 35px;
+    border-radius: 8px;
+}
+a.borderBtn:hover {
+    background: #5940bc;
+    color: #fff;
+    border: 2px solid #5940bc;
+}
+ul.bannerSocialList li a i {
+    color: #5940bc;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+ul.bannerSocialList li a i:hover {
+    animation: bounceUp 0.6s ease-in-out forwards;
+}
+@keyframes bounceUp{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.greyCard{
+    background: #F6F6F6;
+    padding: 40px 40px 60px;
+    border-radius: 12px;
+}
+span.greyText {
+    font-size: 17px;
+    color: #676767;
+}
+.hireSecContact span {
+    color: #a4db74;
+}
+section.projectSec {
+    background: #5840ba;
+}
+.projectSec .heading h6,.projectSec .heading h1{
+    color: #fff;
+}
+.projectSec .heading h6::before {
+    background: #a4db74;
+}
+.projectSec .heading h1 span{
+    color:#a4db74;
+}
+.p-110{
+    padding: 110px !important;
+}
