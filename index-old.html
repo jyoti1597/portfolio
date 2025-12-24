@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Hello , I am Jyoti Chilwal. This is my portfolio website">
+	<meta name="keywords" content="portfolio">
+	<meta name="author" content="Jyoti Chilwal">
+	<meta property="og:title" content="The Coder Wings">
+	<meta property="og:description" content="Portfolio">
+	<meta property="og:image" content="imageslink">
+	<meta property="og:url" content="https://thecoderwings.com">
+	<meta property="og:type" content="website">
+	<title>CodeWithJyoti</title>
+	<!-- css file-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- mediaquery file-->
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<span>Jyoti</span>
+			</div>
+			<div class="sidebar">
+				<div onclick="hideSidebar()" class="closeBtn">
+					<i class="fa fa-close"></i>
+				</div>
+				<ul>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#experience">Experience</a>
+					</li>
+					<li>
+						<a href="#skill">Skills</a>
+					</li>
+				</ul>
+			</div>
+		 	<ul class="navbar">
+				<li>
+					<a href="#home">Home</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#experience">Experience</a>
+				</li>
+				<li>
+					<a href="#skill">Skills</a>
+				</li>
+			</ul>
+			<button class="contactBtn">
+				Contact Me
+			</button>
+			<div onclick="showSidebar()" class="menuIcon">
+				<i class="fa fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+	<!---banner section--->
+	<section class="bannerSec" id="home">
+		<div class="row">
+			<div class="column">
+				<h6>Hello,</h6>
+				<h1>I'm <span>Jyoti Chilwal</span><br>Web Developer</h1>
+				<p>I build exceptional digital experience that are fast accessible, and visually appealing. Let create some amazing togther.</p>
+			</div>
+			<div class="column">
+				<img src="assets/images/portfolio_user_image.png" alt="Banner Image">	
+			</div>
+		</div>
+	</section>
+	<!---runing ribbon Section----->
+	<div class="runingRibbon">
+		<ul>
+			<li>
+				Web Development
+			</li>
+			<li>
+				App Development
+			</li>
+			<li>
+				UI Design
+			</li>
+			<li>
+				Web Development
+			</li>
+			<li>
+				App Development
+			</li>
+			<li>
+				UI Design
+			</li>
+			<li>
+				Web Development
+			</li>
+			<li>
+				App Development
+			</li>
+			<li>
+				UI Design
+			</li>
+		</ul>
+	</div>
+	<!---About Section----->
+	<section class="aboutSec" id="about">
+		<div class="sectionHeading">
+			<h1>About Me</h1>
+		</div>
+		<div class="row mt-5">
+			<div class="column">
+				<div class="experienceBox">
+					<span class="num">3.5</span>
+					<span class="text">Years of Experiences</span>
+				</div>
+			</div>
+			<div class="column">
+				<div class="threeDCard">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi.</p>
+					<a href="https://drive.google.com/file/d/1Uo2yScaFXicF0-2n2lEoSrGdMI1zh9PW/view?usp=sharing" target="_blank" class="textBtn mt-35">Download CV</a>
+					<ul class="socialmediaList mt-35">
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa-brands fa-codepen"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/thecoderwings/?hl=en" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---- Skills--->
+	<section class="skillSec" id="skill">
+		<div class="sectionHeading">
+			<h1>Profensional Skills</h1>
+		</div>
+		<div class="skillsList">
+			<ul>
+				<li>
+					<!-- html-->									
+					<img src="assets/images/html_logo.png">
+					<span>HTML</span>
+				</li>
+				<li>
+					<!-- css-->
+					<img src="assets/images/css_logo.png">
+					<span>HTML</span>
+				</li>
+				<li>
+					<!-- Sass-->
+					<img src="assets/images/sass_logo.png">
+					<span>SASS</span>
+				</li>
+				<li>
+					<!-- js-->
+					<img src="assets/images/js_logo.png">
+					<span>JavaScript</span>
+				</li>
+				<li>
+					<!-- bootstrap-->
+					<img src="assets/images/bootstrap_logo.png">
+					<span>Bootstrap</span>
+				</li>
+				<li>
+					<!--PHP-->
+					<img src="assets/images/php_logo.png">
+					<span>PHP</span>
+				</li>
+				<li>
+					<!--Mysqli-->
+					<img src="assets/images/mysql_logo.png">
+					<span>MySQLi</span>
+				</li>
+				<li>
+					<!--Jquery-->
+					<img src="assets/images/jquery_logo.png">
+					<span>jQuery</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!--- Work Experience Section--->
+	<section class="experienceSec" id="experience">
+		<div class="sectionHeading">
+			<h1>Work Experlince</h1>
+		</div>
+		<div class="timeline mt-35">
+			<div class="timeline-item">
+				<div class="timeline-dote"></div>
+				<div class="timeline-card">
+					<div class="row mb-20">
+						<h2>Php Developer Intern</h2>
+						<span>Sep 2021 - Mar 2022</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dote"></div>
+				<div class="timeline-card">
+					<div class="row mb-20">
+						<h2>Junior Software Developer</h2>
+						<span>April 2022 - May 2024</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dote"></div>
+				<div class="timeline-card">
+					<div class="row mb-20">
+						<h2>Flutter Developer</h2>
+						<span>May 2024 - Jan 2025</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---Hire--->
+	<section class="hiremeSec">
+		<div class="row">
+			<img src='assets/images/hire_me.png' alt="popUpImg">
+			<div class="hireSecContact">
+				<h1>Hire me for your Awesome Project</h1>
+				<p>I am available for freelance projects that depends on your project value.<br>Hire me and get your project done</p>
+			</div>
+			<a href="mailto:jyoti1@gmail.com" target="_blank" class="textBtn">
+				Hire Me
+			</a>
+		</div>
+	</section>
+	<!--- project---->
+	<!--footer--->
+	<footer>
+		<div class="row">
+			<p>
+				Jyoti Chilwal @ All copyright are reserved 
+			</p>
+			<ul class="socialmediaList">
+				<li>
+					<a href="#" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="fa-brands fa-codepen"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</html>
